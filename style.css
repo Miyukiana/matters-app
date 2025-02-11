@@ -1,81 +1,94 @@
-/* Allgemeine Stile */
-* {
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.entry {
-    background-color: yellowgreen;
-    height: 200px;
-    width: 200px;
-    border-radius: 100px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    display: none;
-}
-/* Body und Container-Stil */
-html, body {
-    height: 100%;
-    background-color: mintcream;
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    animation: fadeIn 1.5s ease-in-out forwards;
+/* Allgemeine Stile */
+* {
+   font-family: 'Inter', sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
-/* Flexbox-Container für vertikale Anordnung */
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; /* Gleichmäßig verteilt */
-    align-items: center;
-    height: 100vh;
-    width: 100%;
+/* Body und Container-Stil */
+html, body {
+   height: 100%;
+   background-color: mintcream;
+   color: black;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   opacity: 0;
+   animation: fadeIn 1.5s ease-in-out forwards;
 }
 
-/* Links Styling */
-.link {
-    text-decoration: none;
-    color: yellowgreen;
-    padding: 15px 30px;
-    border-radius: 20px;
-    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+/* Flexbox-Container für vertikale Anordnung */
+.container {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   height: 100vh;
+   width: 100%;
 }
 
-/* Hover-Effekt */
-.link:hover {
-    background-color: green;
-    color: white;
-    transform: scale(1.1);
+/* Links Styling */
+.link {
+   text-decoration: none;
+   color: yellowgreen;
+   padding: 15px 30px;
+   border-radius: 20px;
+   transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 
-/* Spezieller Stil für die grüne Box */
-#green {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: solid 1px yellowgreen;
-    border-radius: 100px;
-    height: 200px;
-    width: 200px;
-    text-align: center;
-    background-color: transparent;
-    opacity: 0;
-    animation: fadeIn 1.5s ease-in-out forwards 0.5s;
+.link:hover {
+   background-color: green;
+   color: white;
+   transform: scale(1.1);
 }
 
-/* Animation für das sanfte Einblenden */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* Spezieller Stil für die grüne Box */
+#green {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: solid 1px green;
+   border-radius: 150px;
+   height: 300px;
+   width: 300px;
+   text-align: center;
+   background-color: transparent;
+   opacity: 0;
+   animation: fadeIn 1.5s ease-in-out forwards 0.5s;
+}
+
+/* Hamster-Animation */
+#entry-image {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 150px;
+   height: auto;
+   transform: translate(-50%, -50%) scale(1) rotate(0deg);
+   opacity: 1;
+   animation: entryAnimation 1.5s ease-in-out forwards;
+}
+
+@keyframes entryAnimation {
+   from {
+       transform: translate(-50%, -50%) scale(1) rotate(0deg);
+       opacity: 1;
+   }
+   to {
+       transform: translate(-50%, -50%) scale(3) rotate(360deg);
+       opacity: 0;
+   }
+}
+
+/* Animation für das sanfte Einblenden */
+@keyframes fadeIn {
+   from {
+       opacity: 0;
+       transform: translateY(-20px);
+   }
+   to {
+       opacity: 1;
+       transform: translateY(0);
+   }
 }
