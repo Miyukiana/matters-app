@@ -43,6 +43,7 @@ a:hover {
     margin: 25px;
     text-align: center;
     line-height: 200px;
+      padding: 100px auto;
 }
 
 /* Active Link */
