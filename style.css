@@ -32,7 +32,7 @@ html, body {
 }
  
 /* Einstiegsanimation für das Hamsterbild */
-#entry-image {
+#entry {
     width: 150px;
     height: auto;
     transform: scale(1) rotate(0deg);
