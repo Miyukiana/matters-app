@@ -50,9 +50,9 @@ html, body {
     align-items: center;
     justify-content: center;
     border: solid 1px green;
-    border-radius: 150px;
-    height: 300px;
-    width: 300px;
+    border-radius: 100px;
+    height: 200px;
+    width: 200px;
     text-align: center;
     background-color: transparent;
     opacity: 0;
