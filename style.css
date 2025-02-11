@@ -15,7 +15,7 @@ html {
 body {
     text-align: center;
     max-width: min(600px, 80dvw);
-    margin: 50px auto;
+    margin: auto;
     background-color: mintcream;
     color: black;
 }
