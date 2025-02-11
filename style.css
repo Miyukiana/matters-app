@@ -37,9 +37,9 @@ a:hover {
 #green {
     display: inline-block;
     border: solid 0.5px;
-    border-radius: 100px;
-    height: 200px;
-    width: 200px;
+    border-radius: 150px;
+    height: 300px;
+    width: 300px;
     margin: 50px;
     text-align: center;
     line-height: 200px;
