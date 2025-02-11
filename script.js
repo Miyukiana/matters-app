@@ -1,11 +1,8 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const greenBox = document.getElementById("green");
+document.addEventListener("DOMContentLoaded", () => {
+   const entryImage = document.getElementById("entry-image");
 
-    greenBox.addEventListener("mouseenter", () => {
-        greenBox.style.backgroundColor = "lightgreen";
-    });
-
-    greenBox.addEventListener("mouseleave", () => {
-        greenBox.style.backgroundColor = "transparent";
-    });
+   // Entfernt das Bild nach der Animation
+   setTimeout(() => {
+       entryImage.style.display = "none";
+   }, 1500);
 });
