@@ -5,7 +5,15 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+.entry {
+    background-color: yellowgreen;
+    height:100dvh;
+    width: 100dvw;
+    border-radius: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
 /* Body und Container-Stil */
 html, body {
     height: 100%;
