@@ -49,7 +49,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: solid 1px green;
+    border: solid 1px yellowgreen;
     border-radius: 100px;
     height: 200px;
     width: 200px;
