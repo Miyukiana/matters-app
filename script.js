@@ -1,8 +1,11 @@
-document.addEventListener("DOMContentLoaded", () => {
-   const entryImage = document.getElementById("entry-image");
-
-   // Entfernt das Bild nach der Animation
-   setTimeout(() => {
-       entryImage.style.display = "none";
-   }, 1500);
+document.addEventListener("DOMContentLoaded", () => {
+    const homescreen = document.getElementById("homescreen");
+ 
+    // Homescreen nach 1.5 Sekunden ausblenden
+    setTimeout(() => {
+        homescreen.style.opacity = "0";
+        setTimeout(() => {
+            homescreen.style.display = "none";
+        }, 500);
+    }, 1500);
 });
