@@ -116,7 +116,7 @@ html, body {
  
 /* Links Styling */
 
-.link {
+a {
 
     text-decoration: none;
 
@@ -130,9 +130,9 @@ html, body {
 
 }
  
-.link:hover {
+a:hover {
 
-    background-color: green;
+    background-color: yellowgreen;
 
     color: white;
 
@@ -150,7 +150,7 @@ html, body {
 
     justify-content: center;
 
-    border: solid 1px green;
+    border: solid 1px yellowgreen;
 
     border-radius: 150px;
 
