@@ -66,35 +66,21 @@ html, body {
 
 #entry {
 
-    width: 150px;
+    width: 300px;
 
-    height: auto;
+    height: 300px;
 
-    transform: scale(1) rotate(0deg);
+    border-radius: 150px;
 
-    opacity: 1;
+    transform: scale(1);
 
-    animation: entryAnimation 1.5s ease-in-out forwards;
+    align-items: center;
 
-}
- 
-@keyframes entryAnimation {
+    justify-content: center;
 
-    from {
+    animation: entryAnimation 2.0s ease-in-out forwards;
 
-        transform: scale(1) rotate(0deg);
-
-        opacity: 1;
-
-    }
-
-    to {
-
-        transform: scale(3) rotate(360deg);
-
-        opacity: 0;
-
-    }
+    background-color: yellowgreen;
 
 }
  
@@ -164,23 +150,21 @@ a:hover {
 
     text-align: center;
 
-    background-color: transparent;
+    background-color: mintcream;
 
     opacity: 0;
 
     animation: fadeIn 1.5s ease-in-out forwards 0.5s;
 
 }
- 
-/* Animation für das sanfte Einblenden */
 
 @keyframes fadeIn {
 
     from {
 
-        opacity: 0;
+        opacity: 1;
 
-        transform: translateY(-20px);
+        transform: translateY(0);
 
     }
 
