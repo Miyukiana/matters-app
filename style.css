@@ -44,9 +44,9 @@ html, body {
 
     left: 0;
 
-    width: 100vw;
+    width: 100dvw;
 
-    height: 100vh;
+    height: 100dvh;
 
     background-color: mintcream;
 
@@ -62,7 +62,7 @@ html, body {
  
 /* Einstiegsanimation für das Hamsterbild */
 
-#entry-image {
+#entry {
 
     width: 150px;
 
@@ -108,7 +108,9 @@ html, body {
 
     align-items: center;
 
-    height: 100vh;
+    align-content: center;
+
+    height: 100dvh;
 
     width: 100%;
 
