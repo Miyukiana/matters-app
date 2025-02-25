@@ -6,16 +6,14 @@
     box-sizing: border-box;
 }
 
-/* Body und Hauptcontainer */
+/* Body – nutzt den gesamten sichtbaren Bereich */
 html, body {
     background-color: mintcream;
     color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Sichtbarer Bereich des Nutzers */
-    width: 100vw; /* Volle Breite */
+    height: 100vh;
+    width: 100vw;
     overflow: hidden; /* Verhindert Scrollen */
+    position: relative; /* Basis für absolute Positionierung */
 }
 
 /* Fixierter Homescreen-Container */
@@ -29,11 +27,11 @@ html, body {
     z-index: 9999;
 }
 
-/* Einstiegsanimation für das Hamsterbild */
+/* Einstiegsanimation für das Hamsterbild (#entry) */
 #entry {
-    width: 300px; /* Größe des Hamsterbilds */
+    width: 300px;
     height: 300px;
-    border-radius: 50%; /* Macht es rund */
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,25 +39,26 @@ html, body {
     background-color: yellowgreen;
 }
 
-/* Container für den Text und #green, der alles zentriert */
+/* Container für Text und #green – absolut zentriert */
 .container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Vertikal zentrieren */
-    align-items: center; /* Horizontal zentrieren */
-    text-align: center;
-    gap: 20px; /* Abstand zwischen den Elementen */
-    width: 100%; /* Sicherstellen, dass es den gesamten Bildschirmbereich nutzt */
+    gap: 20px;
 }
 
-/* Spezieller Stil für die grüne Box */
+/* Spezieller Stil für die grüne Box (#green) */
 #green {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: solid 1px yellowgreen;
-    border-radius: 50%; /* Kreisform */
-    width: 260px; /* Leicht verkleinert, damit es passt */
+    border: 1px solid yellowgreen;
+    border-radius: 50%;
+    width: 260px;  /* Leicht verkleinert, damit es passt */
     height: 260px; /* Gleiche Höhe wie Breite für Kreisform */
     background-color: mintcream;
     animation: fadeIn 1.5s ease-in-out forwards 0.5s;
@@ -73,7 +72,6 @@ a {
     border-radius: 20px;
     transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
-
 a:hover {
     background-color: yellowgreen;
     color: white;
@@ -88,10 +86,6 @@ img {
 
 /* Fade-In Animation */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
