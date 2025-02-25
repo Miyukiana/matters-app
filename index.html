@@ -1,31 +1,11 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Matters</title>
-    <link rel="manifest" href="/Matters/manifest.json"> 
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
-</head>
-<body>
+document.addEventListener("DOMContentLoaded", () => {
+    const homescreen = document.getElementById("homescreen");
  
-    <!-- Homescreen Container (fixiert) -->
-  <div id="homescreen">
-        <img id="entry" src="https://manuelwestermeier.github.io/Selina/ideeen-machen-schule/gesundheit/images/hamster-v2.jpg" alt="Hamster">
-    </div>
- 
-    <div class="container">
-            <a href="body.html" class="link"><h1><em>Körper</em></h1></a>
- 
-        <a id="green" href="pin.html" class="link">
-            <h1><em>Pinnwand</em></h1>
-        </a>
- 
-        <a href="mind.html">
-            <h1><em>Geist</em></h1>
-        </a>
-    </div>
- 
-</body>
-</html>
+    // Homescreen nach 1.5 Sekunden ausblenden
+    setTimeout(() => {
+        homescreen.style.opacity = "0";
+        setTimeout(() => {
+            homescreen.style.display = "none";
+        }, 500);
+    }, 1500);
+});
