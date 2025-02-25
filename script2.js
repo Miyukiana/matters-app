@@ -1,4 +1,4 @@
-let scale = 1;
+ let scale = 1;
   const zoomIn = () => {
     scale += 0.1;
     document.body.style.transform = `scale(${scale})`;
