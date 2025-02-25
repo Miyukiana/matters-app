@@ -41,13 +41,15 @@ html, body {
     background-color: yellowgreen;
 }
 
-/* Container für Text und #green */
+/* Container für den Text und #green, der alles zentriert */
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center; /* Vertikal zentrieren */
     align-items: center; /* Horizontal zentrieren */
+    text-align: center;
     gap: 20px; /* Abstand zwischen den Elementen */
+    width: 100%; /* Sicherstellen, dass es den gesamten Bildschirmbereich nutzt */
 }
 
 /* Spezieller Stil für die grüne Box */
