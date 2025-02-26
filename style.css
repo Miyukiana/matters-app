@@ -63,7 +63,6 @@ html, body {
     background-color: mintcream;
     animation: fadeIn 1.5s ease-in-out forwards 0.5s;
 }
-
 /* Links Styling */
 a {
     text-decoration: none;
@@ -72,17 +71,20 @@ a {
     border-radius: 20px;
     transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
-a:hover {
-    background-color: yellowgreen;
-    color: white;
-    transform: scale(1.1);
-}
 /* Bilder */
 img {
     max-width: 100%;
     height: auto;
 }
+a:hover, a:active {
+    color: lightblue;
+    transform: scale(1.1);
+}
 
+#green:active, #green:hover {
+  color: lightblue;
+  transform: scale(1.1)
+}
 /* Fade-In Animation */
 @keyframes fadeIn {
     from { opacity: 0; }
