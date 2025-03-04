@@ -77,12 +77,12 @@ img {
     height: auto;
 }
 a:hover, a:active {
-    color: lightblue;
+    color: cadetblue;
     transform: scale(1.1);
 }
 
 #green:active, #green:hover {
-  color: lightblue;
+  color: cadetblue;
   transform: scale(1.1)
 }
 /* Fade-In Animation */
