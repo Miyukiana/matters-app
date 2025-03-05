@@ -83,7 +83,8 @@ a:hover, a:active {
 
 #green:active, #green:hover {
   color: cadetblue;
-  transform: scale(1.1)
+  transform: scale(1.1);
+border: solid 1px cadetblue;
 }
 /* Fade-In Animation */
 @keyframes fadeIn {
